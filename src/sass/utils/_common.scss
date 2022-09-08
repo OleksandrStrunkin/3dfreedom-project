@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 277px;
+    width: 200px;
     height: 56px;
     border: none;
     color: var(--second-title-color);
@@ -57,6 +57,9 @@
     text-transform: uppercase;
 
     transition: var(--transition-function);
+    @include tablet{
+      width: 277px;
+    }
   }
 
 .visually-hidden {
