@@ -1,14 +1,22 @@
   body{
     font-family: 'Zen Maru Gothic', sans-serif;
   }
+  .section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
   .container {
     margin-left: auto;
     margin-right: auto;
   
     width: 100%;
   
-    @media screen and ( max-width: 767px){
-      max-width: 320px;
+    @media screen and ( max-width: 320px){
+      max-width: 480px;
       
       padding-left: 20px;
       padding-right: 20px;
@@ -21,8 +29,8 @@
       padding-right: 32px;
     }
   
-    @media screen and ( min-width: 1200px){
-      min-width: 1200px;
+    @media screen and ( min-width: 1440px){
+      min-width: 1440px;
 
       padding-left: 15px;
       padding-right: 16px;
