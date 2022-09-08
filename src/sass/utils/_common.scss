@@ -94,7 +94,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: calc(30/ 24);
   color: var(--second-title-color);
 
   @include tablet{
