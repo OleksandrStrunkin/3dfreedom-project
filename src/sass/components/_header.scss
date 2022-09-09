@@ -114,19 +114,17 @@
   width: 0;
   height: 0;
   position: absolute;
-  right: -12px;
+  right: -10px;
   top: 7px;
 }
 .services {
   position: relative;
   display: inline-block;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__button {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__drop {
   display: none;
@@ -134,21 +132,21 @@
   position: absolute;
   left: -35%;
   width: 135px;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__drop__link {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__drop a {
   text-decoration: none;
   display: block;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.services:hover .services__drop {
+.navigation__select__item:hover .services__drop {
   display: block;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.navigation__select__item{
+  transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
