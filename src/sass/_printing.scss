@@ -1,0 +1,52 @@
+.model-exsamples {
+    padding-bottom: 37.82px;
+}
+
+.model-exsamples__title {
+    padding-bottom: 16px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 16px;
+}
+
+.card-list__item {
+    width: 100%;
+}
+
+.card-list__content {
+
+}
+
+.card-list__title {
+
+}
+
+.model-list {
+
+}
+
+.model-list__item {
+
+}
+
+.model-list__wrap {
+
+}
+
+.model-list__content {
+
+}
+
+.model-list__text {
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.model-list__button {
+    padding-top: 24px;
+}
