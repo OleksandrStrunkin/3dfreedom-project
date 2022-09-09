@@ -2,20 +2,50 @@
   margin: 0 auto;
   max-width: 1440px;
 
-  background-image: url('../images/Main.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('../images/Main.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
-.hero-title {
-  margin-bottom: 60px;
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: calc(56 / 48);
-  text-align: center;
 
-  color: var(--main-text-color);
+.hero {
+  padding: 188px 0 120px;
+
+  &__title {
+    margin-bottom: 60px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(56 / 48);
+    text-align: center;
+
+    color: var(--main-text-color);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__item {
+    // width: 203px;
+    overflow: hidden;
+    &:nth-child(1) {
+      background: #ffffff;
+      border-radius: 0px 72px 0px 0px;
+      filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+    }
+    &:nth-child(2) {
+      background: #ffffff;
+      border-radius: 100px;
+    }
+    &:nth-child(3) {
+      background: #ffffff;
+      border-radius: 0px 72px;
+    }
+  }
 }
 
 .hero__content {
