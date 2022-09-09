@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+
+  background-image: url('../images/Main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-title {
+  margin-bottom: 60px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: calc(56 / 48);
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+
+.hero__content {
+  // max-width: 672px;
+  // margin: 0 auto;
+}
