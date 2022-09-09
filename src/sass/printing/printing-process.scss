@@ -21,6 +21,13 @@
     }
 }
 
+.model-list__text > span {
+   font-weight: 700;
+   font-size: 16px;
+   line-height:calc(20 / 16); 
+   color: var(--second-title-color);
+}
+
 .model-list__button {
     padding-top: 24px;
 }
