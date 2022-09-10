@@ -84,6 +84,15 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
 }
 .button__right {
   animation-name: zoom;
@@ -95,6 +104,15 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
 }
 
 /* The Modal (background) */
@@ -110,6 +128,22 @@
   overflow: auto; /* Enable scroll if needed */
   background: rgba(43, 43, 43, 0.8);
   backdrop-filter: blur(4px);
+  @include mobile {
+    display: none;
+    background: transparent;
+    backdrop-filter: none;
+    z-index: 0;
+  }
+  @include tablet {
+    background: rgba(43, 43, 43, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+  }
+  @include desktop {
+    background: rgba(43, 43, 43, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+  }
 }
 
 .modal__flex {
@@ -171,6 +205,15 @@
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
 }
 
 .close:hover,
