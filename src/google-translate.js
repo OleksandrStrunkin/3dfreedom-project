@@ -1,6 +1,6 @@
 const googleTranslateConfig = {
     /* Original language */
-    lang: "ru",
+    lang: "ua",
     /* The language we translate into on the first visit*/
     /* Язык, на который переводим при первом посещении */
     // langFirstVisit: 'en',
@@ -20,7 +20,7 @@ function TranslateInit() {
     let code = TranslateGetCode();
     // Находим флаг с выбранным языком для перевода и добавляем к нему активный класс
     if (document.querySelector('[data-google-lang="' + code + '"]') !== null) {
-        document.querySelector('[data-google-lang="' + code + '"]').classList.add('language_active');
+        document.querySelector('[data-google-lang="' + code + '"]').classList.add('language__link_active');
     }
 
     if (code == googleTranslateConfig.lang) {
