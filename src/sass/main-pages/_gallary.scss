@@ -6,6 +6,18 @@
   margin-bottom: 16px;
 }
 
+.gallary__wrapper {
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 704px;
+  }
+
+  @include desktop {
+    max-width: 1140px;
+  }
+}
+
 .gallary__list {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +30,6 @@
 }
 
 .gallary__item {
-  background-color: tomato;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 24px;
@@ -34,11 +45,11 @@
 }
 
 .gallary__img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .gallary__text {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 

@@ -2,29 +2,29 @@
   margin: 0 auto;
   max-width: 1440px;
 
-  background-image: url('../images/main-pages/decor-mob-bg.png');
+  background-image: url('../images/main/decor-mob-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/main-pages/decor-mob-bg-2x.png');
+    background-image: url('../images/main/decor-mob-bg-2x.png');
   }
 
   @include tablet {
-    background-image: url('../images/main-pages/decor-tab-bg.png');
+    background-image: url('../images/main/decor-tab-bg.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/main-pages/decor-tab-bg-2x.png');
+      background-image: url('../images/main/decor-tab-bg-2x.png');
     }
   }
   @include tablet {
-    background-image: url('../images/main-pages/decor-desc-bg.png');
+    background-image: url('../images/main/decor-desc-bg.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/main-pages/decor-desc-bg-2x.png');
+      background-image: url('../images/main/decor-desc-bg-2x.png');
     }
   }
 }
