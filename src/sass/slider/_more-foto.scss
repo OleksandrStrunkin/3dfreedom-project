@@ -1,0 +1,188 @@
+.slider {
+  padding-bottom: 156px;
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include mobile {
+    padding-bottom: 121px;
+  }
+}
+
+.slider__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--second-title-color);
+  margin-bottom: 16px;
+
+  @include tablet {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    margin-left: 117px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 60px;
+  }
+}
+
+.slider__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.slider__item {
+  &:nth-child(n + 4) {
+    display: none;
+  }
+  @include tablet {
+    &:nth-child(n + 4) {
+      display: block;
+    }
+  }
+}
+
+.icon-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    margin-top: 12px;
+    display: flex;
+  }
+}
+// Модалка-тест
+
+/* Style the Image Used to Trigger the Modal */
+.morephoto {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.morephoto:hover {
+  opacity: 0.7;
+}
+
+.button__left {
+  animation-name: zoom;
+  animation-duration: 0.3s;
+  width: 42px;
+  height: 42px;
+  margin-right: 32px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.button__right {
+  animation-name: zoom;
+  animation-duration: 0.3s;
+  width: 42px;
+  height: 42px;
+  margin-left: 32px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 250px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.modal__flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 80%;
+    max-width: 554px;
+    max-height: 369px;
+  }
+  @include desktop {
+    display: block;
+    width: 80%;
+    max-width: 906px;
+    max-height: 605px;
+  }
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  display: block;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
