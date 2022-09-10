@@ -1,0 +1,113 @@
+.scan-process {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+.scan-process__title {
+  margin-bottom: 16px;
+}
+
+.scan-process__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+}
+
+.scan-process__item {
+  height: 182px;
+  width: calc((100% - 20px) / 2);
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    height: 210px;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 381px;
+  }
+}
+
+.scan-process__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--second-title-color);
+  margin-top: 115px;
+  padding: 0 19px;
+  @media screen and (min-width: 768px) {
+    margin-top: 132px;
+    padding: 0 28px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 295px;
+    padding: 0 78px;
+  }
+}
+
+.scan-process__item::before {
+  content: '';
+  position: absolute;
+  width: 92px;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+    width: 107px;
+    top: 17px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 240px;
+    top: 67px;
+  }
+}
+
+.scan-process__item:nth-of-type(1)::before {
+  content: url('/src/images/scanning/scanning-process1-mob-1x.png');
+  @media screen and (min-width: 768px) {
+    content: url('/src/images/scanning/scanning-process1-tab-1x.png');
+  }
+  @media screen and (min-width: 1440px) {
+    content: url('/src/images/scanning/scanning-process1-desk-1x.png');
+  }
+}
+
+.scan-process__item:nth-of-type(2)::before {
+  content: url('/src/images/scanning/scanning-process2-mob-1x.png');
+  @media screen and (min-width: 768px) {
+    content: url('/src/images/scanning/scanning-process2-tab-1x.png');
+  }
+  @media screen and (min-width: 1440px) {
+    content: url('/src/images/scanning/scanning-process2-desk-1x.png');
+  }
+}
+
+.scan-process__item:nth-of-type(3)::before {
+  content: url('/src/images/scanning/scanning-process3-mob-1x.png');
+  @media screen and (min-width: 768px) {
+    content: url('/src/images/scanning/scanning-process3-tab-1x.png');
+  }
+  @media screen and (min-width: 1440px) {
+    content: url('/src/images/scanning/scanning-process3-desk-1x.png');
+  }
+}
+
+.scan-process__item:nth-of-type(4)::before {
+  content: url('/src/images/scanning/scanning-process4-mob-1x.png');
+  @media screen and (min-width: 768px) {
+    content: url('/src/images/scanning/scanning-process4-tab-1x.png');
+  }
+  @media screen and (min-width: 1440px) {
+    content: url('/src/images/scanning/scanning-process4-desk-1x.png');
+  }
+}
