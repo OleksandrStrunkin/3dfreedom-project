@@ -2,53 +2,134 @@
   margin: 0 auto;
   max-width: 1440px;
 
-  // background-image: url('../images/Main.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-image: url('../images/main-pages/decor-mob-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/main-pages/decor-mob-bg-2x.png');
+  }
+
+  @include tablet {
+    background-image: url('../images/main-pages/decor-tab-bg.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main-pages/decor-tab-bg-2x.png');
+    }
+  }
+  @include tablet {
+    background-image: url('../images/main-pages/decor-desc-bg.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main-pages/decor-desc-bg-2x.png');
+    }
+  }
 }
 
 .hero {
-  padding: 188px 0 120px;
+  padding: 92px 0 40px;
 
-  &__title {
+  @include tablet {
+    padding: 104px 0 60;
+  }
+
+  @include desktop {
+    padding: 188px 0 120px;
+  }
+}
+.hero__title {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+
+  color: var(--main-text-color);
+  @include tablet {
     margin-bottom: 60px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    max-width: 334px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+  @include desktop {
+    display: flex;
+
+    flex-direction: column;
+    max-width: 630px;
     font-size: 48px;
     line-height: calc(56 / 48);
-    text-align: center;
-
-    color: var(--main-text-color);
   }
+}
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero__list {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 60px;
+    gap: 29px;
+  }
+  @include desktop {
     gap: 32px;
   }
+}
 
-  &__item {
-    // width: 203px;
-    overflow: hidden;
+.hero__item {
+  width: 84px;
+  height: 84px;
+
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  background: #ffffff;
+  overflow: hidden;
+  &:nth-child(1) {
+    border-radius: 0px 35px 0px 0px;
+  }
+  &:nth-child(2) {
+    border-radius: 100px;
+  }
+  &:nth-child(3) {
+    border-radius: 0px 25px;
+  }
+  @include tablet {
+    width: 114px;
+    height: 114px;
+  }
+  @include desktop {
+    width: 203px;
+    height: 203px;
     &:nth-child(1) {
-      background: #ffffff;
       border-radius: 0px 72px 0px 0px;
-      filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
     }
-    &:nth-child(2) {
-      background: #ffffff;
-      border-radius: 100px;
-    }
+
     &:nth-child(3) {
-      background: #ffffff;
       border-radius: 0px 72px;
     }
   }
 }
 
-.hero__content {
-  // max-width: 672px;
-  // margin: 0 auto;
+.hero__text {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  color: var(--main-text-color);
+
+  text-align: center;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }

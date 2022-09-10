@@ -13,7 +13,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  width: 100%;
+  max-width: 100%;
 
   @media screen and (min-width: 320px) {
     max-width: 480px;
@@ -57,9 +57,9 @@ body {
   text-transform: uppercase;
 
   transition: var(--transition-function);
-   @include tablet{
-      width: 277px;
-    }
+  @include tablet {
+    width: 277px;
+  }
 }
 
 .visually-hidden {
@@ -97,12 +97,12 @@ body {
   line-height: calc(30 / 24);
   color: var(--second-title-color);
 
-  @include tablet{
-      font-size: 36px;
-      line-height: calc(45 / 36);
-    }
-  @include desktop{
-      font-size: 48px;
-      line-height: calc(60 / 48);
-    }
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+  @include desktop {
+    font-size: 48px;
+    line-height: calc(60 / 48);
+  }
 }
