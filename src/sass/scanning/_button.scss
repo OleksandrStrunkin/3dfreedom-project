@@ -1,11 +1,13 @@
 .scan-btn {
-  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 }
 
