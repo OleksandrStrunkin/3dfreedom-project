@@ -1,15 +1,13 @@
  .model-list__item {
-    width: 100%;
+    max-width: 100%;
     @include tablet {
         display: flex;
-        justify-content: flex-start;
-        margin-bottom: 60px;
     }
 }
 
 .model-list__item:last-child {
     @include tablet {
-        margin-bottom: 0px;
+        // margin-bottom: 0px;
     }
 }
 
@@ -32,21 +30,35 @@
 }
 
 .model-list__content {
+    flex-grow: 1;
     padding-top: 20px;
-}
-
-.model-list__text {
-    margin-bottom: 16px;
-    &:last-child {
-        margin-bottom: 0;
+    @include tablet {
+        padding-top: 0px;
     }
 }
 
-.model-list__text > span {
+.model-list__text {
+
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    @include tablet {
+        max-width: 336px;
+    }
+}
+
+.accent {
    font-weight: 700;
    font-size: 16px;
    line-height:calc(20 / 16); 
+   text-transform: uppercase;
    color: var(--second-title-color);
+}
+
+.bold {
+    font-weight: 500;
 }
 
 .model-list__button {

@@ -1,7 +1,7 @@
 .model-exsamples {
     padding-bottom: 37.82px;
     @include tablet {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
    @include desktop {
@@ -19,8 +19,14 @@
 
 .card-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px 16px;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 20px 16px;
+    }
+
+    @include tablet {
+        gap: 32px;
+    }
 }
 
 .card-list__item {
