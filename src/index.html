@@ -20,6 +20,17 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/more-foto.html"></include>
+    <div class="wrapper">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/main/hero-section.html"></include>
+        <include src="./partials/main/gallary.html"></include>
+        <include src="./partials/more-foto.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="google-translate.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
   </body>
 </html>

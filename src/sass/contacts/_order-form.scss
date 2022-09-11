@@ -1,0 +1,126 @@
+.order-form__container {
+   @media screen and(max-width:767px) {
+    width: 320px;
+   }
+
+   @include desktop {
+   
+    padding-left: 149px;
+    padding-right: 149px;
+   }
+}
+
+.order-form__title {
+    
+    font-size: 18px;
+    line-height: 1.28;
+    margin-bottom: 8px;
+
+    @include tablet {
+        text-align: center;
+    }
+    @include desktop {
+    font-size: 36px;
+    line-height: 1.25;
+    }
+}
+
+.order-form__field {
+    
+  
+   @include tablet {
+     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   @include tablet {
+    margin-left: auto;
+   }
+   @include desktop {
+    margin-left: auto;
+   }
+}
+
+.order-form__label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+
+
+    
+
+    color: #2B2B2B;
+
+}
+
+.order-form__input {
+    
+    width: 100%;
+    padding-bottom: 8px;
+    margin-bottom: 39.5px;
+    border: none;
+    border-bottom:  1px solid #487996;
+    outline: none;
+
+}
+
+.order-form__input::placeholder {
+
+    color: #2B2B2B;
+}
+
+
+
+
+.order-form__textarea {
+    
+    width: 280px;
+    height: 199px;
+    padding-top: 22px;
+    padding-left: 20px;
+    margin-top: 4px;
+    border: 1px solid #487996;
+    border-radius: 50px 0px;
+    outline: none;
+    @include tablet {
+        width: 400px;
+        
+    }
+    
+}
+
+
+
+.order-form__textarea::placeholder {
+    
+    color: #cdcdcd;
+}
+
+.order-form__textarea-text {
+    margin-bottom: 4px;
+}
+
+.order-form__bottom-text {
+    
+    padding-right:70px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+
+    color: #CDCDCD;
+    @include tablet {
+        padding-right: 0;
+    }
+}
+
+.order-form__button {
+    @include tablet {
+        width: 170px;
+        margin-left: auto;
+    }
+}
+
+.order-form__field {
+    margin-bottom: 60px;
+}
+

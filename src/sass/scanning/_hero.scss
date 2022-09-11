@@ -1,0 +1,92 @@
+.scan-hero {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scan-hero__title {
+    margin-left: 117px;
+  }
+}
+
+.scan-hero__text {
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    width: 504px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 515px;
+    min-height: 138px;
+    margin-top: 24px;
+    margin-right: 72px;
+  }
+}
+
+.scan-hero__image {
+  margin-top: 20px;
+  min-width: 280px;
+  min-height: 199px;
+  background-image: url('../images/scanning/scanning-photo-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .scan-hero__image {
+    background-image: url('../images/scanning/scanning-photo-mob-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scan-hero__image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scan-hero__container {
+    background-image: url('../images/scanning/scanning-photo-tab-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 499px 156px;
+    background-size: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .scan-hero__container {
+    background-image: url('../images/scanning/scanning-photo-tab-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scan-hero__text-wrap {
+    display: flex;
+    margin-left: 117px;
+  }
+  .scan-hero__container {
+    background-image: url('../images/scanning/scanning-photo-desk-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 785px 152px;
+    background-size: 358px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .scan-hero__container {
+    background-image: url('../images/scanning/scanning-photo-desk-2x.jpg');
+  }
+}
