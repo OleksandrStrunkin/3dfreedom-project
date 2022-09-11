@@ -14,7 +14,7 @@
   line-height: 1.25;
   color: var(--second-title-color);
   margin-bottom: 16px;
-
+  text-transform: uppercase;
   @include tablet {
     font-weight: 700;
     font-size: 36px;
