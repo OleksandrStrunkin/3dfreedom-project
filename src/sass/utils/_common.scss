@@ -5,15 +5,15 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   @media screen and (min-width: 1440px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .container {
   margin-left: auto;
   margin-right: auto;
 
-  width: 100%;
+  max-width: 100%;
 
   @media screen and (min-width: 320px) {
     max-width: 480px;
@@ -40,7 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   width: 277px;
   height: 56px;
   border: none;
@@ -57,9 +57,15 @@ body {
   text-transform: uppercase;
 
   transition: var(--transition-function);
-   @include tablet{
-      width: 277px;
-    }
+  @include tablet {
+    width: 277px;
+  }
+  &:hover, &:focus{
+    color: #f5f5fa;
+    background-color: var(--second-title-color);
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px var(--second-title-color);
+  }
 }
 
 .visually-hidden {
@@ -82,10 +88,10 @@ body {
 }
 
 .text {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  color: var (--main-text-color);
+  color: var(--main-text-color);
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.28;
@@ -97,12 +103,12 @@ body {
   line-height: calc(30 / 24);
   color: var(--second-title-color);
 
-  @include tablet{
-      font-size: 36px;
-      line-height: calc(45 / 36);
-    }
-  @include desktop{
-      font-size: 48px;
-      line-height: calc(60 / 48);
-    }
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+  @include desktop {
+    font-size: 48px;
+    line-height: calc(60 / 48);
+  }
 }
