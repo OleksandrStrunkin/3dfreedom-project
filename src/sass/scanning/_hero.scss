@@ -7,6 +7,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .scan-hero__title {
+    margin-left: 117px;
+  }
+}
+
 .scan-hero__text {
   margin-top: 16px;
   @media screen and (min-width: 768px) {
@@ -66,11 +72,12 @@
 @media screen and (min-width: 1440px) {
   .scan-hero__text-wrap {
     display: flex;
+    margin-left: 117px;
   }
   .scan-hero__container {
     background-image: url('../images/scanning/scanning-photo-desk-1x.jpg');
     background-repeat: no-repeat;
-    background-position: 649px 152px;
+    background-position: 785px 152px;
     background-size: 358px;
   }
 }
