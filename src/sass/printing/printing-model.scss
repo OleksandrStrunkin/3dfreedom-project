@@ -1,18 +1,7 @@
-.model-exsamples {
-    padding-bottom: 37.82px;
-    @include tablet {
-        padding-bottom: 20px;
-    }
-
-   @include desktop {
-        padding-bottom: 100px;
-   }
-}
-
 .model-exsamples__title {
     padding-bottom: 16px;
     @include desktop {
-        padding-left: 149px;
+        padding-left: 117px;
         padding-bottom: 24px;
     }
 }
@@ -45,7 +34,7 @@
 
     @include desktop {
         width: calc((100% - 96px) / 4);
-        height: 382px;
+        height: 382px;        
     }
 }
 
@@ -59,6 +48,9 @@
 }
 
 .card-list__first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 89.83px;
     height: 74.37px;
     margin-bottom: 17.06px;
@@ -74,6 +66,9 @@
 }
 
 .card-list__second {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 100.88px;
     height: 63.62px;
     margin-bottom: 16.67px;
@@ -89,6 +84,9 @@
 }
 
 .card-list__third {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 43.16px;
     height: 70.52px;
     margin-bottom: 16.67px;
@@ -104,6 +102,9 @@
 }
 
 .card-list__fourth {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 83.72px;
     height: 85.36px;
     margin-bottom: 9.25px;
@@ -123,8 +124,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
     text-align: center;
     color: var(--second-title-color);
+    @include desktop {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(23 / 18); 
+    }
 }
 
