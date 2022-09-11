@@ -1,6 +1,6 @@
 var modal = document.getElementById('myModal');
 
-var image = document.querySelectorAll('.morephoto');
+var image = document.querySelectorAll('.more-photo__img');
 var modalImg = document.getElementById('img01');
 var captionText = document.getElementById('caption');
 image.forEach(Element => {
@@ -11,7 +11,7 @@ image.forEach(Element => {
   });
 });
 
-var span = document.getElementsByClassName('close')[0];
+var span = document.getElementsByClassName('button__close')[0];
 
 span.onclick = function () {
   modal.style.display = 'none';

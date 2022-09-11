@@ -1,4 +1,4 @@
-.slider {
+.more-photo {
   padding-bottom: 156px;
   @include tablet {
     padding-bottom: 80px;
@@ -8,7 +8,7 @@
   }
 }
 
-.slider__title {
+.more-photo__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -31,14 +31,14 @@
   }
 }
 
-.slider__list {
+.more-photo__list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
   align-items: center;
 }
-.slider__item {
+.more-photo__item {
   &:nth-child(n + 4) {
     display: none;
   }
@@ -65,13 +65,15 @@
 // Модалка-тест
 
 /* Style the Image Used to Trigger the Modal */
-.morephoto {
+.more-photo__img {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.morephoto:hover {
-  opacity: 0.7;
+.more-photo__img {
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .button__left {
@@ -116,7 +118,7 @@
 }
 
 /* The Modal (background) */
-.modal {
+.more-photo__modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -146,7 +148,7 @@
   }
 }
 
-.modal__flex {
+.more-photo__modal--flex {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -196,8 +198,7 @@
   }
 }
 
-/* The Close Button */
-.close {
+.button__close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -216,14 +217,15 @@
   }
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.button__close {
+  &:hover,
+  &:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
