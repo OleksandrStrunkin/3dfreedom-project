@@ -3,16 +3,15 @@
 @import './utils/mixin';
 @import './utils/common';
 
-@import './modeling/modeling-hero';
-@import './modeling/modeling-methods';
-@import './modeling/modeling-create';
-
-
 @import './components/header';
 @import './components/footer';
+
 @import './main-pages/hero';
 @import './main-pages/gallary';
 
+@import './modeling/modeling-hero';
+@import './modeling/modeling-methods';
+@import './modeling/modeling-create';
 
 @import './scanning/hero';
 @import './scanning/process';

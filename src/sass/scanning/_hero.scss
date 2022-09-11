@@ -1,7 +1,15 @@
 .scan-hero {
-  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   @media screen and (min-width: 1440px) {
-    margin-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scan-hero__title {
+    margin-left: 117px;
   }
 }
 
@@ -47,8 +55,8 @@
   .scan-hero__container {
     background-image: url('../images/scanning/scanning-photo-tab-1x.jpg');
     background-repeat: no-repeat;
-    background-position: 506px 160px;
-    background-size: 241px;
+    background-position: 499px 156px;
+    background-size: 250px;
   }
 }
 
@@ -64,11 +72,12 @@
 @media screen and (min-width: 1440px) {
   .scan-hero__text-wrap {
     display: flex;
+    margin-left: 117px;
   }
   .scan-hero__container {
     background-image: url('../images/scanning/scanning-photo-desk-1x.jpg');
     background-repeat: no-repeat;
-    background-position: 649px 152px;
+    background-position: 785px 152px;
     background-size: 358px;
   }
 }

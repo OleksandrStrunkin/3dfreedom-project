@@ -9,6 +9,20 @@
 
 .scan-process__title {
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-left: 28px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    margin-left: 117px;
+  }
 }
 
 .scan-process__list {
@@ -59,55 +73,128 @@
   content: '';
   position: absolute;
   width: 92px;
+  height: 82px;
   top: 14px;
   left: 50%;
   transform: translateX(-50%);
   @media screen and (min-width: 768px) {
     width: 107px;
+    height: 94px;
     top: 17px;
   }
   @media screen and (min-width: 1440px) {
     width: 240px;
-    top: 67px;
+    height: 240px;
+    top: 50px;
   }
 }
 
 .scan-process__item:nth-of-type(1)::before {
-  content: url('/src/images/scanning/scanning-process1-mob-1x.png');
+  content: '';
+  background-image: url('/src/images/scanning/scanning-process1-mob-1x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   @media screen and (min-width: 768px) {
-    content: url('/src/images/scanning/scanning-process1-tab-1x.png');
+    background-image: url('/src/images/scanning/scanning-process1-tab-1x.png');
   }
   @media screen and (min-width: 1440px) {
-    content: url('/src/images/scanning/scanning-process1-desk-1x.png');
+    background-image: url('/src/images/scanning/scanning-process1-desk-1x.png');
   }
 }
 
 .scan-process__item:nth-of-type(2)::before {
-  content: url('/src/images/scanning/scanning-process2-mob-1x.png');
+  content: '';
+  background-image: url('/src/images/scanning/scanning-process2-mob-1x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   @media screen and (min-width: 768px) {
-    content: url('/src/images/scanning/scanning-process2-tab-1x.png');
+    background-image: url('/src/images/scanning/scanning-process2-tab-1x.png');
   }
   @media screen and (min-width: 1440px) {
-    content: url('/src/images/scanning/scanning-process2-desk-1x.png');
+    background-image: url('/src/images/scanning/scanning-process2-desk-1x.png');
   }
 }
 
 .scan-process__item:nth-of-type(3)::before {
-  content: url('/src/images/scanning/scanning-process3-mob-1x.png');
+  content: '';
+  background-image: url('/src/images/scanning/scanning-process3-mob-1x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   @media screen and (min-width: 768px) {
-    content: url('/src/images/scanning/scanning-process3-tab-1x.png');
+    background-image: url('/src/images/scanning/scanning-process3-tab-1x.png');
   }
   @media screen and (min-width: 1440px) {
-    content: url('/src/images/scanning/scanning-process3-desk-1x.png');
+    background-image: url('/src/images/scanning/scanning-process3-desk-1x.png');
   }
 }
 
 .scan-process__item:nth-of-type(4)::before {
-  content: url('/src/images/scanning/scanning-process4-mob-1x.png');
+  content: '';
+  background-image: url('/src/images/scanning/scanning-process4-mob-1x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   @media screen and (min-width: 768px) {
-    content: url('/src/images/scanning/scanning-process4-tab-1x.png');
+    background-image: url('/src/images/scanning/scanning-process4-tab-1x.png');
   }
   @media screen and (min-width: 1440px) {
-    content: url('/src/images/scanning/scanning-process4-desk-1x.png');
+    background-image: url('/src/images/scanning/scanning-process4-desk-1x.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .scan-process__item:nth-of-type(1)::before {
+    content: '';
+    background-image: url('/src/images/scanning/scanning-process1-mob-2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/scanning/scanning-process1-tab-2x.png');
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url('/src/images/scanning/scanning-process1-desk-2x.png');
+    }
+  }
+  .scan-process__item:nth-of-type(2)::before {
+    content: '';
+    background-image: url('/src/images/scanning/scanning-process2-mob-2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/scanning/scanning-process2-tab-2x.png');
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url('/src/images/scanning/scanning-process2-desk-2x.png');
+    }
+  }
+  .scan-process__item:nth-of-type(3)::before {
+    content: '';
+    background-image: url('/src/images/scanning/scanning-process3-mob-2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/scanning/scanning-process3-tab-2x.png');
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url('/src/images/scanning/scanning-process3-desk-2x.png');
+    }
+  }
+  .scan-process__item:nth-of-type(4)::before {
+    content: '';
+    background-image: url('/src/images/scanning/scanning-process4-mob-2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/scanning/scanning-process4-tab-2x.png');
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url('/src/images/scanning/scanning-process4-desk-2x.png');
+    }
   }
 }
