@@ -1,7 +1,9 @@
 .scan-hero {
-  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   @media screen and (min-width: 1440px) {
-    margin-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 }
 
@@ -47,8 +49,8 @@
   .scan-hero__container {
     background-image: url('../images/scanning/scanning-photo-tab-1x.jpg');
     background-repeat: no-repeat;
-    background-position: 506px 160px;
-    background-size: 241px;
+    background-position: 499px 156px;
+    background-size: 250px;
   }
 }
 
