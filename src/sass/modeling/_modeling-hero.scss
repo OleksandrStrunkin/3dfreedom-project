@@ -1,0 +1,23 @@
+.modeling-hero__title {
+  margin-bottom: 16px;
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+.modeling-hero__text {
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    width: 504px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 515px;
+    min-height: 138px;
+    margin-top: 24px;
+    margin-right: 72px;
+  }
+}
+.modeling-hero__wrap {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
