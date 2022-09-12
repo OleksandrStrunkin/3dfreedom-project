@@ -122,7 +122,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 250px; /* Location of the box */
+  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -140,11 +140,13 @@
     background: rgba(43, 43, 43, 0.8);
     backdrop-filter: blur(4px);
     z-index: 1;
+    padding-top: 150px;
   }
   @include desktop {
     background: rgba(43, 43, 43, 0.8);
     backdrop-filter: blur(4px);
     z-index: 1;
+    padding-top: 250px;
   }
 }
 
