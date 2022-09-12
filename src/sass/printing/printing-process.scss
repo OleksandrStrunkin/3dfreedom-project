@@ -50,7 +50,7 @@
 }
 
 .model-list__content {
-    
+    max-width: 100%;
     padding-top: 20px;
     @include tablet {
         max-width: 336px;
