@@ -1,13 +1,24 @@
-.order-form__container {
+.connect-wrap__container {
    @media screen and(max-width:767px) {
     width: 320px;
    }
 
    @include desktop {
-   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    
     padding-left: 149px;
     padding-right: 149px;
    }
+}
+
+.order-form {
+    @include desktop {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
 }
 
 .order-form__title {
@@ -19,9 +30,11 @@
     @include tablet {
         text-align: center;
     }
-    @include desktop {
+    @include desktop {   
     font-size: 36px;
     line-height: 1.25;
+    text-align: start;
+    margin-bottom: 16px;
     }
 }
 
@@ -33,19 +46,21 @@
     margin-left: auto;
     margin-right: auto;
    }
-   @include tablet {
-    margin-left: auto;
-   }
+   
    @include desktop {
-    margin-left: auto;
+    max-width: 555px;
+    
+    
    }
 }
 
 .order-form__label {
+    display: block;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
+    margin-bottom: 8px;
 
 
     
@@ -62,16 +77,21 @@
     border: none;
     border-bottom:  1px solid #487996;
     outline: none;
-
+    @include tablet {
+        margin-bottom: 44px;
+    }
 }
 
 .order-form__input::placeholder {
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: #2B2B2B;
 }
 
-
-
+.text-content {
+    position: relative;
+}
 
 .order-form__textarea {
     
@@ -82,12 +102,23 @@
     margin-top: 4px;
     border: 1px solid #487996;
     border-radius: 50px 0px;
+    resize: none;
     outline: none;
     @include tablet {
         width: 400px;
         
     }
+
+    @include desktop {
+        width: 555px;
+    }
     
+}
+
+.order-form__icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -122,5 +153,56 @@
 
 .order-form__field {
     margin-bottom: 60px;
+}
+
+// Connect-info
+
+
+
+.connect-info {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+    @include tablet {
+        flex-direction: row;
+        padding-bottom: 60px;
+        
+    }
+    @include desktop {
+        flex-direction: column;
+        gap: 68px;
+    }
+    }
+
+.connect-info__tel,
+.connect-info__mail,
+.connect-info__time {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text {
+    font-weight: 500;
+}
+
+.title {
+    font-size: 18px;
+    @include desktop {
+        font-size: 36px;
+    }
+}
+
+.connect-info__time {
+    @include tablet {
+        text-align: end;
+        margin-left: auto;
+    }
+    @include desktop {
+        text-align: start;
+        margin: 0;
+      
+    }
 }
 
