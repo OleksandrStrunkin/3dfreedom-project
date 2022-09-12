@@ -1,0 +1,243 @@
+.contactform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 280px;
+
+    @media screen and (min-width: 440px) {
+        width: 400px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 555px;
+    }
+
+}
+
+.form__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    color: #487996;
+    text-align: left;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+}
+
+
+
+.form__list {
+    display: block;
+    text-align: left;
+}
+
+.form__item:not(:last-child) {
+    margin-bottom: 44px;
+}
+
+.form__field {
+    position: relative;
+    display: block;
+}
+
+.form__label {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    transform-origin: left center;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-transform: capitalize;
+    color: #2B2B2B;
+    transition: transform 400ms ease-in-out;
+}
+
+
+.form__input:not(:-moz-placeholder-shown)+.form__label {
+    color: #2B2B2B;
+    transform: translateY(-20px) scale(0.8);
+}
+
+.form__input:not(:-ms-input-placeholder)+.form__label {
+    color: #2B2B2B;
+    transform: translateY(-20px) scale(0.8);
+}
+
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label {
+    color: #2B2B2B;
+    transform: translateY(-20px) scale(0.8);
+}
+
+.form__input {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-transform: capitalize;
+    color: #2B2B2B;
+    outline: transparent;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #487996;
+    transition: border-color 400ms ease-in-out;
+}
+
+.form__input:not(:-moz-placeholder-shown) {
+    border-color: #487996;
+}
+
+.form__input:not(:-ms-input-placeholder) {
+    border-color: #487996;
+}
+
+.form__input:focus,
+.form__input:not(:placeholder-shown) {
+    border-color: #487996;
+}
+
+.form__input::-moz-placeholder {
+    -moz-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+    opacity: 0;
+}
+
+.form__input:-ms-input-placeholder {
+    -ms-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+    opacity: 0;
+}
+
+.form__input::placeholder {
+    transition: opacity 400ms ease-in-out;
+    opacity: 0;
+}
+
+.form__input:focus::-moz-placeholder {
+    opacity: 1;
+}
+
+.form__input:focus:-ms-input-placeholder {
+    opacity: 1;
+}
+
+.form__input:focus::placeholder {
+    opacity: 1;
+}
+
+.form__select {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 4px 0;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #2B2B2B;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #487996;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url('../images/dw.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0 bottom 8px;
+}
+
+.form__select:active,
+.form__select:focus {
+    background-image: url('../images/up.svg');
+}
+
+.form__textarea__label {
+    display: flex;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 /16);
+    text-transform: capitalize;
+    color: #2B2B2B;
+}
+
+.form__textarea {
+    display: flex;
+    margin-top: 4px;
+    padding: 22px 20px;
+    width: 100%;
+    height: 199px;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 /16);
+    color: #CDCDCD;
+    resize: none;
+    outline: none;
+    border: none;
+    border: 1px solid #487996;
+    border-radius: 50px 0px;
+}
+
+.form__textarea__field {
+    display: block;
+    position: relative;
+}
+
+.form__textarea__icon {
+    display: block;
+    position: absolute;
+    right: 21px;
+    bottom: 23px;
+    fill: #CDCDCD;
+    ;
+    transition: fill 400ms ease-in-out;
+}
+
+.form__textarea__description {
+    display: flex;
+    justify-content: start;
+    margin-top: 4px;
+    width: 100%;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 /16);
+    color: #CDCDCD;
+}
+
+.uploadfile {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.uploadfile__label:hover .form__textarea__icon,
+.uploadfile__label:focus .form__textarea__icon {
+    cursor: pointer;
+    fill: #487996;
+}

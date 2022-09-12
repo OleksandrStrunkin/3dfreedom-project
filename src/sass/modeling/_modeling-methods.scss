@@ -1,0 +1,88 @@
+.modeling-methods__title {
+  margin-bottom: 16px;
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.modeling-methods__item {
+  padding-left: 17px;
+  position: relative;
+}
+.modeling-methods__item::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--second-title-color);
+  border-radius: 3px 0px;
+  @media screen and (min-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+.modeling-methods__list {
+  padding-bottom: 40px;
+}
+.modeling-methods__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.modeling-methods__image {
+  min-width: 280px;
+  min-height: 164px;
+  background-image: url('../images/modeling/modeling-motor-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .modeling-methods__image {
+    background-image: url('../images/modeling/modeling-motor-mob-2x.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .modeling-methods__image {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-tab-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 480px 60px;
+    background-size: 246px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-tab-2x.jpg');
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modeling-methods__item {
+    display: flex;
+  }
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-desk-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 700px 0px;
+    background-size: 530px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-desk-2x.jpg');
+  }
+}
