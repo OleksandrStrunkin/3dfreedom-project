@@ -1,10 +1,10 @@
 .more-photo {
-  padding-bottom: 156px;
+  padding-bottom: 121px;
   @include tablet {
     padding-bottom: 80px;
   }
-  @include mobile {
-    padding-bottom: 121px;
+  @include desktop {
+    padding-bottom: 156px;
   }
 }
 
@@ -14,7 +14,7 @@
   line-height: 1.25;
   color: var(--second-title-color);
   margin-bottom: 16px;
-
+  text-transform: uppercase;
   @include tablet {
     font-weight: 700;
     font-size: 36px;
