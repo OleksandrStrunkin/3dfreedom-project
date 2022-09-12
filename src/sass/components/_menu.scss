@@ -13,11 +13,11 @@ font-size: 20px;
 
   }
 }
-.menu-list{
+.menu_list{
  margin-top: 66px;
 display: flex;
-flex-wrap: wrap;
-gap: 24px;
+flex-direction: column;
+align-items: center;
 }
 
 .menu_item{
@@ -25,7 +25,7 @@ gap: 24px;
   position: relative;
   padding-left: 17px;
 
-text-align: center;
+
   
 
 }
