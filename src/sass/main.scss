@@ -3,7 +3,6 @@
 @import './utils/mixin';
 @import './utils/common';
 
-
 @import './components/header';
 @import './components/footer';
 
@@ -35,9 +34,14 @@
 
 
 
+
 @import './printing/printing-model.scss';
 @import './printing/printing-process.scss';
 
 
 
 @import './components/menu';
+
+@import './printing/printing-model.scss';
+@import './printing/printing-process.scss';
+
