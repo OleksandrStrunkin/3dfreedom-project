@@ -19,6 +19,7 @@
     margin-bottom: 55px;
     @include tablet {
         display: flex;
+        justify-content: center;
         margin-bottom: 60px;
     }
 
@@ -49,12 +50,13 @@
 }
 
 .model-list__content {
-    flex-grow: 1;
+    
     padding-top: 20px;
     @include tablet {
+        max-width: 336px;
         padding-top: 0px;
         padding-left: 32px;
-    }
+    }    
 
     @include desktop {
         padding-left: 85px;
