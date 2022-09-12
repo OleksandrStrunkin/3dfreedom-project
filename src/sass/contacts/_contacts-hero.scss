@@ -26,31 +26,50 @@
     border-radius: 15px;
     width: 280px;
     height: 171px;
+    margin-bottom: 16px;
     @include tablet {
         width: 336px;
         height: 261px;
+        margin-bottom: 0;
     }
 
     @include desktop {
         width: 555px;
         height: 315px;
+        margin-bottom: 0;
     }
 }
 
-.contacts-hero__text {
-    margin-top: 16px;
+.contacts-list {
     max-width: 280px;
     @include tablet {
         max-width: 100%;
         margin-top: 0;
-        margin-bottom: 16px;
     }
     @include desktop {
         width: 515px;
-   
-        margin-bottom: 24px;
     }
 } 
+
+.contacts-list__item:not(:last-child) {
+    margin-bottom: 16px;
+    @include desktop {
+        margin-bottom: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+.part-text {
+    font-weight: 500;
+    font-size: 19px;
+   }
+
 
 .contacts-hero__video-content {
     @include tablet {

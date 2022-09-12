@@ -89,12 +89,8 @@
     color: #2B2B2B;
 }
 
-.text-content {
-    position: relative;
-}
-
 .order-form__textarea {
-    
+ 
     width: 280px;
     height: 199px;
     padding-top: 22px;
@@ -115,10 +111,22 @@
     
 }
 
+.textarea {
+    position: relative;
+}
+
 .order-form__icon {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 27px;
+    right: 28px;
+    cursor: pointer;
+    @include tablet {
+        bottom: 18px;
+        right: 18.1px;
+    }
+    @include desktop {
+        right: 61px;
+    }
 }
 
 
@@ -153,6 +161,9 @@
 
 .order-form__field {
     margin-bottom: 60px;
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 
 // Connect-info
@@ -163,11 +174,10 @@
     display:flex;
     flex-direction: column;
     gap:20px;
+    padding-bottom: 60px;
 
     @include tablet {
-        flex-direction: row;
-        padding-bottom: 60px;
-        
+        flex-direction: row; 
     }
     @include desktop {
         flex-direction: column;
@@ -183,15 +193,16 @@
     gap: 8px;
 }
 
-.text {
-    font-weight: 500;
-}
-
-.title {
+.connect-info__title {
     font-size: 18px;
     @include desktop {
         font-size: 36px;
     }
+}
+
+.connect-info__link,
+.connect-info__text {
+    font-weight: 500;
 }
 
 .connect-info__time {
@@ -202,7 +213,6 @@
     @include desktop {
         text-align: start;
         margin: 0;
-      
     }
 }
 
