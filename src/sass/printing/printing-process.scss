@@ -1,4 +1,13 @@
- .model-list {
+.process-description {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+}
+
+.model-list {
     @include desktop {
         padding-left: 117px;
         padding-right: 205px;
@@ -88,6 +97,11 @@
 
 .model-list__button {
     margin-top: 24px;
+    @media screen and (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     @include tablet {
         margin-top: 56px;
     }
