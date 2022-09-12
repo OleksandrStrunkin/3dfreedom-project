@@ -6,6 +6,7 @@
 @import './components/header';
 @import './components/footer';
 
+@import './main-pages/decor';
 @import './main-pages/hero';
 @import './main-pages/gallary';
 @import './slider/more-foto';
@@ -20,28 +21,15 @@
 
 @import './take-order/take-order';
 
-
-
-
 @import './contacts/contacts-hero';
 @import './contacts/order-form';
-
-
-
-
-
-
-
-
 
 @import './printing/printing-model.scss';
 @import './printing/printing-process.scss';
 
-
-
 @import './components/menu';
 
-@import "./contacts/contacts-hero";
-@import "./contacts/order-form";
+@import './contacts/contacts-hero';
+@import './contacts/order-form';
 @import './printing/printing-model.scss';
 @import './printing/printing-process.scss';

@@ -1,36 +1,37 @@
-.wrapper {
-  margin: 0 auto;
-  max-width: 1440px;
+// .wrapper {
+//   margin: 0 auto;
+//   max-width: 1440px;
 
-  background-image: url('../images/main/decor-mob-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/main/decor-mob-bg-2x.png');
-  }
+//     background-image: url('../images/main/decor/decor-mob-bg.png');
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-  @include tablet {
-    background-image: url('../images/main/decor-tab-bg.png');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/main/decor-tab-bg-2x.png');
-    }
-  }
-  @include tablet {
-    background-image: url('../images/main/decor-desc-bg.png');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/main/decor-desc-bg-2x.png');
-    }
-  }
-}
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url('../images/main/decor/decor-mob-bg-2x.png');
+//     }
+
+//     @include tablet {
+//       background-image: url('../images/main/decor/decor-tab-bg.png');
+//       @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//         background-image: url('../images/main/decor/decor-tab-bg-2x.png');
+//       }
+//     }
+//     @include desktop {
+//       background-image: url('../images/main/decor/decor-desc-bg.png');
+//       @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//         background-image: url('../images/main/decor/decor-desc-bg-2x.png');
+//       }
+//     }
+//   }
 
 .section-hero {
+  position: relative;
   padding: 40px 0 40px;
 
   @include tablet {
@@ -74,6 +75,7 @@
   gap: 14px;
   margin-bottom: 32px;
   @include tablet {
+    // max-width: 400px;
     margin-bottom: 60px;
     gap: 29px;
   }
