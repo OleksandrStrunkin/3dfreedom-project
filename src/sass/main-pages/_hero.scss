@@ -5,6 +5,7 @@
   background-image: url('../images/main/decor-mob-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  // background-position: center;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -29,18 +30,18 @@
   }
 }
 
-.hero {
-  padding: 92px 0 40px;
+.section-hero {
+  padding: 40px 0 40px;
 
   @include tablet {
-    padding: 104px 0 60;
+    padding-bottom: 60px;
   }
 
   @include desktop {
-    padding: 188px 0 120px;
+    padding: 88px 0 120px;
   }
 }
-.hero__title {
+.section-hero__title {
   max-width: 250px;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -67,7 +68,7 @@
   }
 }
 
-.hero__list {
+.section-hero__list {
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -81,7 +82,7 @@
   }
 }
 
-.hero__item {
+.section-hero__item {
   width: 84px;
   height: 84px;
 
@@ -114,7 +115,7 @@
   }
 }
 
-.hero__text {
+.section-hero__text {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 400;
   font-size: 16px;
