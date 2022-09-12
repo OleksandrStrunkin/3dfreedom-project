@@ -1,4 +1,10 @@
+.contacts-hero {
+    @include desktop {
+        padding-bottom:100px;
+}
+    }
 
+    
 .contacts-hero__container {
     @media screen and(max-width:767px) {
     width: 320px;  
@@ -11,7 +17,7 @@
 }
 
 .contacts-hero__title {
-    margin-top: 20px;
+    
     margin-bottom: 16px;
     text-transform: uppercase;
 }
