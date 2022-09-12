@@ -97,12 +97,10 @@
     }
     @include desktop {
         flex-direction: column;
-        float: right;
         
     }
 }
 .contacts-order__tel-box {
-    width: 184px;
     margin-bottom: 24px;
 }
 .contacts-order__mail-box{
