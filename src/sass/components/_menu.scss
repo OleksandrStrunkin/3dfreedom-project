@@ -21,13 +21,12 @@ align-items: center;
 }
 
 .menu_item{
-  margin-bottom: 24px;
   position: relative;
   padding-left: 17px;
 
-
-  
-
+}
+.menu_item:not(:last-child){
+  margin-bottom: 24px;
 }
 .main-link{
 font-weight: 700;

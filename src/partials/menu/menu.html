@@ -1,3 +1,4 @@
+<div class="menu-container container is-hidden">
 <header class="header container">
   <a href="" class="logo"
     ><picture>
@@ -22,7 +23,7 @@
       />
       <img src="./images/header/logo.png" alt="Site Logo" /> </picture
   ></a>
-  <button type="button" class="mobile__open menu-open">
+  <button type="button" class="mobile__open menu-open" data-menu-button aria-expanded="false">
     <svg class="mobile__icon--open" width="32" height="18">
       <use href="./images/icons.svg#menu-open"></use>
     </svg>
@@ -54,10 +55,9 @@
     </li>
   </ul>
 </header>
-<div class="menu-container container is-hidden">
-    <div class="box">
 
-    <ul class="menu_list">
+
+  <ul class="menu_list">
 <li class="menu_item">
     <a Class="link main-link" href=""><span class="main-text-acent">ГОЛОВНА</span> </a>
 </li>
@@ -93,5 +93,4 @@
     <a Class="link main-link" href="">КОНТАКТИ</a>
 </li>        
     </ul>
-     </div>
 </div>
