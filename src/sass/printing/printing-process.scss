@@ -52,12 +52,15 @@
 .model-list__content {
     max-width: 100%;
     padding-top: 20px;
-    @include tablet {
+    @media screen (min-width: 768px)and (max-width: 1439px) {
         max-width: 336px;
+    }
+
+    @include tablet {
         padding-top: 0px;
         padding-left: 32px;
-    }    
-
+    }   
+    
     @include desktop {
         padding-left: 85px;
     }
