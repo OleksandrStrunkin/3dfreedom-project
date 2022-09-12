@@ -1,0 +1,147 @@
+//  .form {
+//     width: 280px;
+//     height: 678px;
+//     @include tablet{
+//       width: 748px;
+//     height: 897px;  
+//     }
+//     @include desktop{
+//     width: 555px;
+//     height: 756px;
+//     float: left;}
+//  }
+.hero-order__title { 
+    text-align: center;
+    margin-bottom: 16px;
+    @include tablet { 
+        text-align: left;
+    }
+}
+ .hero-order__box{
+    @include tablet {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+}
+.hero-order__image {
+  min-width: 280px;
+  min-height: 171px;
+    background-image: url('../images/take-order/order-mob-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include tablet {
+        min-width: 336px;
+        min-height: 158px;
+        background-image: url('../images/take-order/order-tab-1x.jpg');
+      }
+      @include desktop {
+        min-width: 555px;
+        min-height: 400px;
+        background-image: url('../images/take-order/order-desk-1x.jpg');
+      }
+}
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .scan-hero__image {
+    background-image: url('../images/take-order/order-mob-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-order__image {
+    background-image: url('../images/take-order/order-tab-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero-order__image {
+    background-image: url('../images/take-order/order-desk-2x.jpg');
+  }
+}
+
+.hero-order__gallery-box {
+    margin-top: 16px;
+}
+
+.hero-order__text {
+    margin-bottom: 16px;
+
+}
+.hero-order__gallery {
+    @media screen and (max-width: 1439px) {
+        display: none;
+      }
+    @include desktop {
+      display: flex;
+    }
+}
+.hero-order__gallery-list {
+    display: flex;
+}
+
+.contacts-order__info{
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+    @include desktop {
+        flex-direction: column;
+        
+    }
+}
+.contacts-order__tel-box {
+    margin-bottom: 24px;
+}
+.contacts-order__mail-box{
+    margin-bottom: 24px;
+}
+.contacts-order__time-box {
+    @include tablet {
+        margin-left: auto;
+    }
+    @include desktop {
+        margin-left: 0;
+    }
+}
+.contacts-order__title {
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+color: #487996;
+margin-bottom: 8px;
+@include desktop {
+    text-align: right;
+}
+}
+.contacts-order__list {
+    @include desktop {
+        text-align: right;
+    }
+}
+.contacts-order__item{
+    margin-bottom: 8px;
+}
+.contacts-order__text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1,25;
+text-transform: capitalize;
+color: #2B2B2B;
+}
+.contacts-order__time {
+    @include tablet {
+        text-align: right;
+    }
+
+}
