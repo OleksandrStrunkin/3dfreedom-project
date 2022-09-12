@@ -1,6 +1,15 @@
 .modeling-create {
   text-align: center;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 .modeling-create__title {
   text-align: start;
