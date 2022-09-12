@@ -18,6 +18,9 @@
 }
 
 .form__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(23 / 18);
     color: #487996;
     text-align: left;
     margin-bottom: 28px;
@@ -32,6 +35,11 @@
 .form__list {
     display: block;
     text-align: left;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 24px;
+    }
 }
 
 .form__item:not(:last-child) {
@@ -48,25 +56,12 @@
     bottom: 4px;
     left: 0;
     transform-origin: left center;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
     text-transform: capitalize;
     color: #2B2B2B;
     transition: transform 400ms ease-in-out;
-}
-
-
-.form__input:not(:-moz-placeholder-shown)+.form__label {
-    color: #2B2B2B;
-    transform: translateY(-20px) scale(0.8);
-}
-
-.form__input:not(:-ms-input-placeholder)+.form__label {
-    color: #2B2B2B;
-    transform: translateY(-20px) scale(0.8);
 }
 
 .form__input:focus+.form__label,
@@ -79,8 +74,6 @@
     display: flex;
     width: 100%;
     height: 24px;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -93,42 +86,14 @@
     transition: border-color 400ms ease-in-out;
 }
 
-.form__input:not(:-moz-placeholder-shown) {
-    border-color: #487996;
-}
-
-.form__input:not(:-ms-input-placeholder) {
-    border-color: #487996;
-}
-
 .form__input:focus,
 .form__input:not(:placeholder-shown) {
     border-color: #487996;
 }
 
-.form__input::-moz-placeholder {
-    -moz-transition: opacity 400ms ease-in-out;
-    transition: opacity 400ms ease-in-out;
-    opacity: 0;
-}
-
-.form__input:-ms-input-placeholder {
-    -ms-transition: opacity 400ms ease-in-out;
-    transition: opacity 400ms ease-in-out;
-    opacity: 0;
-}
-
 .form__input::placeholder {
     transition: opacity 400ms ease-in-out;
     opacity: 0;
-}
-
-.form__input:focus::-moz-placeholder {
-    opacity: 1;
-}
-
-.form__input:focus:-ms-input-placeholder {
-    opacity: 1;
 }
 
 .form__input:focus::placeholder {
@@ -137,8 +102,6 @@
 
 .form__textarea__label {
     display: flex;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -152,8 +115,6 @@
     padding: 22px 20px;
     width: 100%;
     height: 199px;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -184,8 +145,6 @@
     justify-content: start;
     margin-top: 4px;
     width: 100%;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -207,7 +166,6 @@
     fill: #487996;
 }
 
-//---------------------select--------------------------
 .select {
     display: block;
     position: relative;
@@ -217,8 +175,6 @@
     position: relative;
     border-bottom: 1px solid #487996;
     padding: 4px 0;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -235,8 +191,6 @@
     cursor: pointer;
     width: 100%;
     z-index: 2;
-    
-    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -268,20 +222,10 @@
     right: 0;
     bottom: 4px;
     background: url('../images/dw.svg') no-repeat right;
-
-    -webkit-transition: all 400ms ease-in-out;
-        -o-transition: all 400ms ease-in-out;
-            transition: all 400ms ease-in-out;
-
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transition: all 400ms ease-in-out;
+    transform: rotate(0deg);
 }
 
 .new-select.on:after {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
 }
