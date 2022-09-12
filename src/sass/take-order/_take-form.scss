@@ -2,9 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include desktop {
-        justify-content: left;
-    }
 }
 
 .form {
@@ -21,6 +18,8 @@
 }
 
 .form__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(23 / 18);
@@ -54,6 +53,8 @@
     bottom: 4px;
     left: 0;
     transform-origin: left center;
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -83,6 +84,8 @@
     display: flex;
     width: 100%;
     height: 24px;
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -137,35 +140,10 @@
     opacity: 1;
 }
 
-.form__select {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding: 4px 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    color: #2B2B2B;
-    outline: none;
-    border: none;
-    background-color: #fff;
-    border-bottom: 1px solid #487996;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    background-image: url('../images/dw.svg');
-    background-repeat: no-repeat, repeat;
-    background-position: right 0 bottom 8px;
-}
-
-.form__select:active,
-.form__select:focus {
-    background-image: url('../images/up.svg');
-}
-
 .form__textarea__label {
     display: flex;
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -179,6 +157,8 @@
     padding: 22px 20px;
     width: 100%;
     height: 199px;
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -201,7 +181,6 @@
     right: 21px;
     bottom: 23px;
     fill: #CDCDCD;
-    ;
     transition: fill 400ms ease-in-out;
 }
 
@@ -209,8 +188,9 @@
     display: flex;
     justify-content: start;
     margin-top: 4px;
-    margin-bottom: 24px;
     width: 100%;
+    font-family: 'Cera Pro';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 /16);
@@ -230,4 +210,83 @@
 .uploadfile__label:focus .form__textarea__icon {
     cursor: pointer;
     fill: #487996;
+}
+
+//---------------------select--------------------------
+.select {
+    display: block;
+    position: relative;
+}
+
+.new-select {
+    position: relative;
+    border-bottom: 1px solid #487996;
+    padding: 4px 0;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #2B2B2B;
+    cursor: pointer;
+    user-select: none;
+}
+
+.new-select__list {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-bottom: 1px solid #487996;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #2B2B2B;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 4px 8px;
+}
+
+.new-select__item span:hover {
+    background: rgba(72, 121, 150, 0.5);
+    color: #FFFFFF;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background: url('../images/dw.svg') no-repeat right;
+
+    -webkit-transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
