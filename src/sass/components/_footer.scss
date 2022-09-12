@@ -19,7 +19,7 @@
   @include desktop {
     display: flex;
     flex-direction: row;
-    align-items: flex-start
+    align-items: flex-start;
   }
 }
 .footer__container--second {
@@ -112,6 +112,11 @@
 }
 .footer__item--link {
   color: var(--main-text-color);
+  transition: color var(--transition-function);
+  &:hover,
+  &:focus {
+    color: var(--second-title-color);
+  }
 }
 .footer__list--second {
   font-weight: 500;
