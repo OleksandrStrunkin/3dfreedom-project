@@ -3,10 +3,9 @@
     text-align: center;
     margin-bottom: 16px;
     font-weight: 700;
-font-size: 24px;
-line-height: 30px;
-
-color: #487996;
+    font-size: 22px;
+    line-height: 28px;
+    color: #487996;
     @include tablet { 
         text-align: left;
         font-size: 36px;
@@ -36,6 +35,7 @@ color: #487996;
     @include tablet {
         min-width: 336px;
         min-height: 158px;
+        margin-bottom: 0;
         background-image: url('../images/take-order/order-tab-1x.jpg');
       }
       @include desktop {
@@ -76,11 +76,19 @@ color: #487996;
 }
 
 .hero-order__text {
+    font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+color: #2B2B2B;
     margin-bottom: 16px;
 @include tablet {
+    font-weight: 400;
     margin-bottom: 0;
 }
 @include desktop {
+    font-weight: 300;
+font-size: 18px;
+line-height: 23px;
     margin-bottom: 24px;
 }
 }
@@ -113,16 +121,30 @@ color: #487996;
 }
 
 
+.contacts--take-order {
+    @include desktop {
+        padding: 0 149px;
+    }
+}
+.take-order-box {
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        padding: 0 0 80px 0;
+        justify-content: space-between;
+    }
+}
 .contacts-order__info{
     display: flex;
     flex-direction: column;
+    
+    padding: 60px 0;
     @include tablet {
         flex-direction: row;
     }
     @include desktop {
         flex-direction: column;
-        margin-right: auto;
-        margin-bottom: 68px;
+        padding: 0;
     }
 }
 .contacts-order__tel-box {
@@ -189,15 +211,26 @@ line-height: 20px;
         text-align: right;
     }
 }
-.contact-order__gallery{
+.contacts-order__gallery{
     @media screen and (max-width: 1439px) {
         display: none;
     }
     @include desktop {
-    display: flex;
-    width: 529.52px;
-    height: 324.91px;
-    margin-left: auto;
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
 }}
+
+.order-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+}
+.order-wrap-text {
+    @include desktop{
+    display: flex;
+    flex-wrap: wrap;}
+}

@@ -89,7 +89,6 @@
         </button>
       </form>
     </div>
-    <div class="container">
       <div class="contacts-order__info">
         <div class="contacts-order__tel-box">
           <h3 class="contacts-order__title">ТЕЛЕФОНИ</h3>
@@ -122,28 +121,25 @@
           <h3 class="contacts-order__title">РОБОЧИЙ ЧАС</h3>
           <ul class="contacts-order__time">
             <li class="contacts-order__item contacts-order__text">
-              Пн-пт: <br />
-              з 8:00 до 19:00
+              Пн-пт: <span class="order-wrap">з 8:00 до 19:00</span>
             </li>
             <li class="contacts-order__item contacts-order__text">
-              Сб, Нд: <br />
-              з 10:00 до 17:00
+              Сб, Нд: <span class="order-wrap">з 10:00 до 17:00</span>
             </li>
           </ul>
         </div>
+        <div class="contacts-order__gallery">
+          <picture>
+            <!-- <source
+              srcset="
+                ./images/take-order/gallery-image-1x.jpeg 1x,
+                ./images/take-order/gallery-image-2x.jpeg 2x
+              "
+              media="(min-width: 1440px)"
+            /> -->
+            <img src="./images/take-order/order-gallery-1x.png" alt="order1" />
+          </picture>
+        </div>
       </div>
-      <div class="contact-order__gallery">
-        <picture>
-          <source
-            srcset="
-              ./images/take-order/gallery-image-1x.jpeg 1x,
-              ./images/take-order/gallery-image-2x.jpeg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <img src="./images/take-order/gallery-image-1x.jpeg" alt="order1" />
-        </picture>
-      </div>
-    </div>
   </div>
 </section>
