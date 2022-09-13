@@ -89,17 +89,14 @@
     color: #2B2B2B;
 }
 
-.text-content {
-    position: relative;
-}
-
 .order-form__textarea {
-    
+ 
     width: 280px;
     height: 199px;
     padding-top: 22px;
     padding-left: 20px;
     margin-top: 4px;
+    color: #CDCDCD;
     border: 1px solid #487996;
     border-radius: 50px 0px;
     resize: none;
@@ -115,10 +112,25 @@
     
 }
 
+.textarea {
+    position: relative;
+}
+
 .order-form__icon {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 27px;
+    right: 28px;
+    cursor: pointer;
+    fill: #cdcdcd;
+    @include tablet {
+        bottom: 18px;
+        right: 18.1px;
+        
+    }
+    @include desktop {
+        right: 61px;
+        
+    }
 }
 
 
@@ -153,6 +165,24 @@
 
 .order-form__field {
     margin-bottom: 60px;
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
+.file-upload {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.file-upload__label:hover .order-form__icon {
+
+    cursor: pointer;
+    fill: #487996;
 }
 
 // Connect-info
@@ -163,11 +193,10 @@
     display:flex;
     flex-direction: column;
     gap:20px;
+    padding-bottom: 60px;
 
     @include tablet {
-        flex-direction: row;
-        padding-bottom: 60px;
-        
+        flex-direction: row; 
     }
     @include desktop {
         flex-direction: column;
@@ -181,17 +210,22 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include desktop {
+        gap: 18px;
+    }
 }
 
-.text {
-    font-weight: 500;
-}
-
-.title {
+.connect-info__title {
     font-size: 18px;
     @include desktop {
         font-size: 36px;
     }
+}
+
+.connect-info__link,
+.connect-info__text {
+    font-weight: 500;
 }
 
 .connect-info__time {
@@ -202,7 +236,12 @@
     @include desktop {
         text-align: start;
         margin: 0;
-      
+    }
+}
+
+br {
+    @include desktop {
+        display: none;
     }
 }
 

@@ -79,41 +79,65 @@
 .button__left {
   animation-name: zoom;
   animation-duration: 0.3s;
-  width: 42px;
-  height: 42px;
-  margin-right: 32px;
+  width: 11px;
+  height: 10px;
+  margin-right: 10px;
   cursor: pointer;
   padding: 0;
   border: none;
   background-color: transparent;
-  @include mobile {
-    display: none;
-  }
+  display: block;
   @include tablet {
     display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 32px;
   }
   @include desktop {
     display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 32px;
   }
 }
 .button__right {
   animation-name: zoom;
   animation-duration: 0.3s;
-  width: 42px;
-  height: 42px;
-  margin-left: 32px;
+
+  margin-left: 10px;
   cursor: pointer;
   padding: 0;
   border: none;
+  width: 11px;
+  height: 10px;
   background-color: transparent;
-  @include mobile {
-    display: none;
-  }
+  display: block;
   @include tablet {
     display: block;
+    width: 42px;
+    height: 42px;
+    margin-left: 32px;
   }
   @include desktop {
     display: block;
+    width: 42px;
+    height: 42px;
+    margin-left: 32px;
+  }
+}
+
+.button-svg {
+  @include mobile {
+    width: 11px;
+    height: 10px;
+  }
+  @include tablet {
+    width: 26px;
+    height: 26px;
+  }
+  @include desktop {
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -122,7 +146,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 250px; /* Location of the box */
+  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -130,21 +154,18 @@
   overflow: auto; /* Enable scroll if needed */
   background: rgba(43, 43, 43, 0.8);
   backdrop-filter: blur(4px);
-  @include mobile {
-    display: none;
-    background: transparent;
-    backdrop-filter: none;
-    z-index: 0;
-  }
+  padding-top: 200px;
   @include tablet {
     background: rgba(43, 43, 43, 0.8);
     backdrop-filter: blur(4px);
     z-index: 1;
+    padding-top: 250px;
   }
   @include desktop {
     background: rgba(43, 43, 43, 0.8);
     backdrop-filter: blur(4px);
     z-index: 1;
+    padding-top: 250px;
   }
 }
 
@@ -157,7 +178,10 @@
 
 /* Modal Content (Image) */
 .modal-content {
-  display: none;
+  display: block;
+  width: 80%;
+  max-width: 236px;
+  max-height: 157px;
   @include tablet {
     display: block;
     width: 80%;
@@ -201,19 +225,23 @@
 .button__close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 25px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 27px;
   font-weight: bold;
   transition: 0.3s;
-  @include mobile {
-    display: none;
-  }
+  display: block;
   @include tablet {
     display: block;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
   @include desktop {
     display: block;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 

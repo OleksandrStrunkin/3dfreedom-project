@@ -24,12 +24,11 @@
 }
 
 .scan-process__list {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    gap: 32px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -41,8 +40,13 @@
     inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   position: relative;
+  background-color: #ffffff;
   @media screen and (min-width: 768px) {
     height: 210px;
+    width: calc((100% - 96px) / 4);
+    &:nth-child(-n + 3) {
+      margin-right: 32px;
+    }
   }
   @media screen and (min-width: 1440px) {
     height: 381px;
@@ -194,5 +198,28 @@
     @media screen and (min-width: 1440px) {
       background-image: url('/src/images/scanning/scanning-process4-desk-2x.png');
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scan-process__figure {
+    position: absolute;
+    z-index: -1;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+  .scan-process__figure-one {
+    width: 74px;
+    height: 74px;
+    border-radius: 0px 0px 0px 35px;
+    left: -37px;
+    top: 108px;
+  }
+  .scan-process__figure-two {
+    width: 74px;
+    height: 74px;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+    right: -40px;
+    top: 77px;
   }
 }
