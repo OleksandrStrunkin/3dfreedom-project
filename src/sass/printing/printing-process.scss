@@ -1,5 +1,4 @@
 .process-description {
-    // max-width: 100%;
     padding-top: 40px;
     padding-bottom: 60px;
     padding-left: 0px;
@@ -7,16 +6,6 @@
     @include desktop {
         padding-top: 100px;
         padding-bottom: 80px;
-    }
-}
-
-.process-description__container {
-    @media screen and (min-width: 320px) {
-        max-width: 320px;
-    }
-
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
     }
 }
 
