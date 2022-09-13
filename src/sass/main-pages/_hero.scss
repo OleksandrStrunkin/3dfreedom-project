@@ -1,37 +1,6 @@
-// .wrapper {
-//   margin: 0 auto;
-//   max-width: 1440px;
-
-//     background-image: url('../images/main/decor/decor-mob-bg.png');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/main/decor/decor-mob-bg-2x.png');
-//     }
-
-//     @include tablet {
-//       background-image: url('../images/main/decor/decor-tab-bg.png');
-//       @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//         background-image: url('../images/main/decor/decor-tab-bg-2x.png');
-//       }
-//     }
-//     @include desktop {
-//       background-image: url('../images/main/decor/decor-desc-bg.png');
-//       @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//         background-image: url('../images/main/decor/decor-desc-bg-2x.png');
-//       }
-//     }
-//   }
 
 .section-hero {
-  position: relative;
+  // position: relative;
   padding: 40px 0 40px;
 
   @include tablet {

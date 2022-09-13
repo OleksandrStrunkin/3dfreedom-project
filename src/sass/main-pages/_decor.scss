@@ -12,6 +12,9 @@
     transform: scale(1.2);
   }
 }
+.container-relative{
+  position: relative;
+}
 
 .section-hero__icon {
   @include desktop {
