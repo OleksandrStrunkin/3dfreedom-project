@@ -43,13 +43,14 @@
 .contacts-list {
     max-width: 280px;
     @include tablet {
-        max-width: 100%;
-        margin-top: 0;
+    max-width: 330px;
+    margin-top: 0;
     }
     @include desktop {
-        width: 515px;
+    max-width: 500px;
     }
-} 
+}
+
 
 .contacts-list__item:not(:last-child) {
     margin-bottom: 16px;
