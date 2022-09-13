@@ -331,3 +331,109 @@
     }
   }
 }
+
+// Gallary Decor
+
+.gallary .container {
+  position: relative;
+}
+
+.decor-gallary-1 {
+  display: none;
+  @include tablet {
+    display: block;
+    border-radius: 0px 0px 35px 0px;
+    transform: rotate(-180deg);
+    right: 32px;
+    top: 34px;
+    z-index: -1;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: -52px;
+      right: 45px;
+      border-radius: 72px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      @include desktop {
+        border-radius: 0px 0px 72px 0px;
+        width: 140px;
+        height: 161px;
+        top: 397px;
+        left: 35px;
+        border-radius: 72px 0px;
+      }
+    }
+  }
+
+  @include desktop {
+    top: -49;
+    left: -10px;
+    width: 110px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(0);
+    z-index: -1;
+  }
+}
+
+.decor-gallary-2 {
+  display: none;
+  @include tablet {
+    display: block;
+
+    bottom: -100px;
+    right: 32px;
+
+    border-radius: 25px 0px;
+    z-index: -1;
+    @include desktop {
+      border-radius: 72px;
+      bottom: -120px;
+      background-image: url('../images/main/decor/desctop/img-5-desc-1x-min.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/main/decor/desctop/img-5-desc-2x-min.jpg');
+      }
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: -48px;
+      right: 555px;
+      border-radius: 0px 35px 0px 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      z-index: -1;
+      @include desktop {
+        top: -309%;
+        right: 0;
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(-180deg);
+      }
+    }
+    &::after {
+      content: '';
+
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: 26px;
+      right: 629px;
+      border-radius: 0px 0px 0px 35px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      z-index: -1;
+      @include desktop {
+        top: -210%;
+        right: -96px;
+        border-radius: 72px;
+      }
+    }
+  }
+}
