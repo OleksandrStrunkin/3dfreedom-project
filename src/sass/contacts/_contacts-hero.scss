@@ -43,13 +43,14 @@
 .contacts-list {
     max-width: 280px;
     @include tablet {
-        max-width: 100%;
-        margin-top: 0;
+    max-width: 330px;
+    margin-top: 0;
     }
     @include desktop {
-        width: 515px;
+    max-width: 500px;
     }
-} 
+}
+
 
 .contacts-list__item:not(:last-child) {
     margin-bottom: 16px;
@@ -58,7 +59,31 @@
     }
 }
 
+.contacts-list__item {
+    position: relative;
+}
 
+.contacts-list__icon {
+    position: absolute;
+    top: 0;
+    left: 172px;
+    @include tablet {
+        left: 180px;
+    }
+    @include desktop {
+        top: 77px;
+        left: 0;
+    }
+}
+
+.contacts-list__img {
+    width: 22px;
+    height: 22px;
+    @include desktop {
+        width: 49px;
+        height: 49px;
+    }
+}
 
 
 
