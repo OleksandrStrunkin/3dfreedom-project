@@ -1,4 +1,8 @@
-
+.hero-order__container{
+    @include desktop {
+        padding: 0 32px 0 149px;
+    }
+}
 .hero-order__title { 
     text-align: center;
     margin-bottom: 16px;
@@ -189,11 +193,11 @@ margin-bottom: 18px;
         text-align: right;
     }
 }
-.contacts-order__item{
-    margin-bottom: 8px;
-    @include desktop {
-        margin-bottom: 18px;
-    }
+
+.contacts-order__item:not(:last-child){
+margin-bottom: 8px;
+    @include desktop{
+margin-bottom: 18px;}
 }
 .contacts-order__text {
 font-weight: 400;
@@ -216,17 +220,20 @@ line-height: 20px;
         display: none;
     }
     @include desktop {
-
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
+    margin-right: -100px;
+    margin-top: -25px;
 }}
 
 .order-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    @include tablet {
+        justify-content: flex-end;
+    }
     @include desktop {
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     }
 }
 .order-wrap-text {
@@ -234,3 +241,100 @@ line-height: 20px;
     display: flex;
     flex-wrap: wrap;}
 }
+
+.hero-order{
+    position: relative;
+}
+.hero-order__figure {
+    position: absolute;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-order__figure-one {
+    width: 74px;
+    height: 74px;
+    border-radius: 0px 0px 35px 0px;
+    left: -29px;
+    top: 150px;
+    @media screen and (min-width: 768px) {
+      height: 71px;
+      left: 0px;
+      top: 57px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 82px;
+      height: 78px;
+      border-radius: 0px 0px 72px 0px;
+      left: -117px;
+      top: -56px;
+    }
+  }
+  
+  .hero-order__figure-two {
+    width: 74px;
+    height: 74px;
+    border-radius: 72px;
+    right: -40px;
+    top: 400px;
+    @media screen and (min-width: 768px) {
+      border-radius: 0px 35px 0px 0px;
+      transform: rotate(180deg);
+      right: 0;
+      top: -68px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 144px;
+      height: 137px;
+      border-radius: 0px 0px 72px 0px;
+      transform: rotate(90deg);
+      right: 0px;
+      top: -80px;
+    }
+  }
+  
+  .hero-order__figure-three {
+    width: 74px;
+    height: 74px;
+    border-radius: 25px 0px;
+    left: -37px;
+    top: 466px;
+    @media screen and (min-width: 768px) {
+      width: 71px;
+      left: 633px;
+      top: 284px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 137px;
+      height: 144px;
+      border-radius: 72px 0px;
+      left: 1123px;
+      top: 265px;
+    }
+  }
+
+
+  .contacts--take-order{
+    position: relative;
+  }
+  @media screen and (max-width: 767px) {
+    .contacts-order__figure {
+      position: absolute;
+      z-index: -1;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+    .contacts-order__figure-one {
+      width: 74px;
+      height: 74px;
+      border-radius: 0px 0px 0px 35px;
+      left: -37px;
+      bottom: 80px;
+    }
+    .contacts-order__figure-two {
+      width: 74px;
+      height: 74px;
+      border-radius: 25px 0px;
+      transform: rotate(90deg);
+      right: -40px;
+      top: 140px;
+    }
+  }
