@@ -45,6 +45,12 @@
 }
 .phone {
   display: inline-block;
+  border: none;
+  padding: 0;
+  margin-right: 24px;
+  @include tablet {
+    display: none;
+  }
 }
 .phone__block--mobile {
   opacity: 0;
@@ -74,13 +80,13 @@
 .phone__mobile {
   width: 24px;
   height: 24px;
-  margin-right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   position: relative;
   background-color: transparent;
+  padding: 0;
   @include tablet {
     display: none;
   }
