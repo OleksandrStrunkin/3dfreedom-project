@@ -120,12 +120,15 @@
     bottom: 27px;
     right: 28px;
     cursor: pointer;
+    fill: #cdcdcd;
     @include tablet {
         bottom: 18px;
         right: 18.1px;
+        
     }
     @include desktop {
         right: 61px;
+        
     }
 }
 
@@ -166,6 +169,21 @@
     }
 }
 
+.file-upload {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.file-upload__label:hover .order-form__icon {
+
+    cursor: pointer;
+    fill: #487996;
+}
+
 // Connect-info
 
 
@@ -191,6 +209,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include desktop {
+        gap: 18px;
+    }
 }
 
 .connect-info__title {
@@ -213,6 +235,12 @@
     @include desktop {
         text-align: start;
         margin: 0;
+    }
+}
+
+br {
+    @include desktop {
+        display: none;
     }
 }
 
