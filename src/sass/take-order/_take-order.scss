@@ -242,7 +242,7 @@ line-height: 20px;
     flex-wrap: wrap;}
 }
 
-.hero-order{
+.hero-order__container{
     position: relative;
 }
 .hero-order__figure {
@@ -313,7 +313,7 @@ line-height: 20px;
   }
 
 
-  .contacts--take-order{
+  .take-order-box{
     position: relative;
   }
   @media screen and (max-width: 767px) {
@@ -327,7 +327,7 @@ line-height: 20px;
       height: 74px;
       border-radius: 0px 0px 0px 35px;
       left: -37px;
-      bottom: 80px;
+      top: 108px;
     }
     .contacts-order__figure-two {
       width: 74px;
@@ -335,6 +335,6 @@ line-height: 20px;
       border-radius: 25px 0px;
       transform: rotate(90deg);
       right: -40px;
-      top: 140px;
+      top: 77px;
     }
   }
