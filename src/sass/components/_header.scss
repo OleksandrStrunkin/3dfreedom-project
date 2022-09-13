@@ -9,6 +9,7 @@
   @include desktop {
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 35px;
   }
 }
 
@@ -45,6 +46,7 @@
 }
 .phone {
   display: inline-block;
+  position: relative;
   border: none;
   padding: 0;
   margin-right: 24px;
@@ -54,27 +56,29 @@
 }
 .phone__block--mobile {
   opacity: 0;
-  background-color: transparent;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   border: 1px solid;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: #bdbdbd;
-  top: 25-px;
+  top: -100px;
   left: -70px;
   width: 162px;
   transform: translateY(0%);
-  transition: var(--transition-function);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 5px;
+  z-index: 999;
 }
 .phone__mobile:hover .phone__block--mobile,
 .phone__mobile:focus .phone__block--mobile {
-  transform: translateY(100%);
+  transform: translateY(255%);
   opacity: 1;
 }
 .phone__mobile:hover::before {
-  transform: translateY(320%);
+  transform: translateY(300%);
   opacity: 1;
 }
 .phone__mobile {
@@ -100,12 +104,12 @@
   border: 8px solid #ffffff;
   border-bottom: 8px solid #bdbdbd;
   position: absolute;
-  left: 50%;
-  margin-left: -12px;
+  left: 15%;
   top: -29px;
   width: 0;
   opacity: 0;
-  transition: var(--transition-function);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone__icon {
   fill: #008cef;
@@ -177,14 +181,15 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--second-title-color);
     transition: color var(--transition-function);
   }
 }
 .services__drop {
   background-color: transparent;
-  overflow: hidden;
+  opacity: 0;
   display: block;
   position: absolute;
   top: -35px;
@@ -192,7 +197,8 @@
   width: 135px;
   height: 10%;
   transform: translateY(0%);
-  transition: var(--transition-function);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services__drop--link {
   font-weight: 500;
@@ -200,7 +206,9 @@
   line-height: 1.18;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
-  &:hover {
+  margin-bottom: 4px;
+  &:hover,
+  &:focus {
     color: var(--second-title-color);
     transition: color var(--transition-function);
   }
@@ -210,8 +218,8 @@
 }
 .navigation__select--item:hover .services__drop,
 .navigation__select--item:focus .services__drop {
-  transform: translateY(2200%);
-  overflow: visible;
+  transform: translateY(2400%);
+  opacity: 1;
 }
 .language {
   position: relative;
@@ -222,7 +230,7 @@
 }
 .language__variations {
   background-color: transparent;
-  overflow: hidden;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -231,7 +239,8 @@
   width: 110%;
   height: 10%;
   transform: translateY(0);
-  transition: var(--transition-function);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .language__link {
   font-weight: 700;
@@ -242,5 +251,70 @@
 }
 .language:hover .language__variations {
   transform: translateY(1000%);
-  overflow: visible;
+  opacity: 1;
+}
+
+.scan-process__figure {
+  position: absolute;
+  z-index: -1;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+.scan-process__figure--one {
+  width: 140px;
+  height: 144px;
+  border-radius: 0px 0px 70px 70px;
+  left: 40.5%;
+  top: 0;
+  @media screen and(min-width:768px) and (max-width: 1439px) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 32%;
+    transform: rotate(-90deg);
+  }
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    width: 73.65px;
+    height: 74.05px;
+    right: 0;
+    top: 0;
+    border-radius: 35px 0px 0px 35px;
+  }
+}
+.scan-process__figure--two {
+  width: 144px;
+  height: 144px;
+  border-radius: 72px 0px 0px 72px;
+  right: 230px;
+  top: 0px;
+  @media screen and(min-width:768px) and (max-width: 1439px) {
+    width: 73.65px;
+    height: 74.05px;
+    right: 215px;
+  }
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    display: none;
+  }
+}
+.scan-process__figure--three {
+  width: 144px;
+  height: 144px;
+  border-radius: 72px 0px 0px 72px;
+  left: 23.5%;
+  top: 0px;
+  transform: rotate(180deg);
+  @media screen and(min-width:768px) and (max-width: 1439px) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 5%;
+  }
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 0;
+    top: 0;
+    border-radius: 35px 0px 0px 35px;
+    transform: rotate(180deg);
+  }
+}
+.header__block {
+  position: relative;
 }
