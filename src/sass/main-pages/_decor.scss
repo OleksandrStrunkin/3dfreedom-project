@@ -1,7 +1,22 @@
 .section-hero__link-down {
   display: none;
+
   @include tablet {
     display: block;
+    padding: 25px;
+    transition: transform 300ms liener;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.section-hero__icon {
+  @include desktop {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -9,8 +24,21 @@
   position: absolute;
   width: 73.65px;
   height: 73.65px;
-  background-color: #fff;
+  // background-color: #fff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    z-index: -1;
+  }
+
+  @include tablet {
+    width: 73.65px;
+    height: 74.05px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: var(--z-index-decor);
+  }
 
   @include desktop {
     width: 144.18px;
@@ -23,7 +51,9 @@
     top: 242px;
     left: -27px;
     border-radius: 0px 0px 35px 0px;
-    z-index: -1;
+  }
+  @include tablet {
+    display: none;
   }
 }
 
@@ -32,7 +62,9 @@
     top: 21%;
     right: -30px;
     border-radius: 72px;
-    z-index: -1;
+  }
+  @include tablet {
+    display: none;
   }
 }
 
@@ -41,7 +73,9 @@
     top: 67%;
     left: -37px;
     border-radius: 25px 0px;
-    z-index: -1;
+  }
+  @include tablet {
+    display: none;
   }
 }
 
@@ -50,6 +84,250 @@
     top: 111%;
     left: -37px;
     border-radius: 0px 0px 0px 35px;
-    z-index: -1;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+// Tablet decor blocs
+
+.decor-hero__block-1 {
+  display: none;
+  @include tablet {
+    display: block;
+    top: 0;
+    left: 105px;
+    border-radius: 72px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    background-image: url('../images/main/decor/tablet/img-1-tab-1x-min.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main/decor/tablet/img-1-tab-2x-min.jpg');
+    }
+
+    @include desktop {
+      left: 178px;
+      background-image: url('../images/main/decor/desctop/img-1-desc-1x-min.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/main/decor/desctop/img-1-desc-2x-min.jpg');
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      left: -100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 0px 35px 0px;
+
+      @include desktop {
+        border-radius: 0px 0px 72px 0px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: 100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 35px 0px 0px;
+
+      @include desktop {
+        left: -242px;
+        border-radius: 0px 72px 0px 0px;
+      }
+    }
+  }
+}
+
+.decor-hero__block-2 {
+  display: none;
+  @include tablet {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 223px;
+    left: 105px;
+    border-radius: 0px 0px 35px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    @include desktop {
+      top: 433px;
+      left: 174px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: -100%;
+      left: -100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 0px 0px 35px;
+
+      @include desktop {
+        border-radius: 0px 0px 0px 72px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: 80%;
+      left: -100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px;
+      background-size: inherit;
+      background-repeat: inherit;
+      background-position: inherit;
+      background-image: url('../images/main/decor/tablet/img-3-tab-1x-min.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/main/decor/tablet/img-3-tab-2x-min.jpg');
+      }
+
+      @include desktop {
+        left: -100%;
+        border-radius: 0px 72px 0px 0px;
+        border-radius: 72px;
+        background-image: url('../images/main/decor/desctop/img-3-desc-1x-min.jpg');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/main/decor/desctop/img-3-desc-2x-min.jpg');
+        }
+      }
+    }
+  }
+}
+
+.decor-hero__block-3 {
+  display: none;
+  @include tablet {
+    display: block;
+    top: 2%;
+    right: 30px;
+    border-radius: 0px 0px 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 0px 72px 0px;
+    background-image: url('../images/main/decor/tablet/img-2-tab-1x-min.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main/decor/tablet/img-2-tab-2x-min.jpg');
+    }
+
+    @include desktop {
+      right: 32px;
+      border-radius: 0px 0px 72px 0px;
+      background-image: url('../images/main/decor/desctop/img-2-desc-1x-min.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/main/decor/desctop/img-2-desc-2x-min.jpg');
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      left: -100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: 100%;
+      right: 100%;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px;
+    }
+  }
+}
+
+.decor-hero__block-4 {
+  display: none;
+  @include tablet {
+    display: block;
+    top: 217px;
+    right: 30px;
+    border-radius: 72px 72px 0px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    background-image: url('../images/main/decor/tablet/img-4-tab-1x-min.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main/decor/tablet/img-4-tab-2x-min.jpg');
+    }
+
+    @include desktop {
+      right: 32px;
+      top: calc(432px + 2%);
+      border-radius: 72px 72px 0px 0px;
+      background-image: url('../images/main/decor/desctop/img-4-desc-1x-min.jpg');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/main/decor/desctop/img-4-desc-2x-min.jpg');
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: -100%;
+      border-radius: 25px 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      @include desktop {
+        border-radius: 72px 0px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      top: 100%;
+
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 35px 0px 0px;
+      transform: rotate(180deg);
+      @include desktop {
+        border-radius: 0px 72px 0px 0px;
+      }
+    }
+
+    .decor-hero__block-5 {
+      position: absolute;
+      left: -100%;
+      z-index: inherit;
+      border-radius: 0px 0px 0px 35px;
+      background-color: inherit;
+      @include desktop {
+        border-radius: 0px 0px 0px 72px;
+      }
+    }
   }
 }
