@@ -34,18 +34,16 @@
 
 .model-list__wrap {
     width: 280px;
-    height: 385.35px;
+    height: auto;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
     border-radius: 50px 0px;
     overflow: hidden;
     @include tablet {
         width: 336px;
-        height: 462px;
     }
 
     @include desktop {
         width: 236px;
-        height: 324px;
     }
 }
 
