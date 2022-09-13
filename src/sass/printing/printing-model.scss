@@ -10,6 +10,18 @@
     }
 }
 
+.model-exsamples__container {
+    .process-description__container {
+        @media screen and (min-width: 320px) {
+            max-width: 320px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    }
+}
+
 .model-exsamples__title {
     padding-bottom: 16px;
     @include desktop {

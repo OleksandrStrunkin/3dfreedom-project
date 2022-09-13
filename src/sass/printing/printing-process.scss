@@ -10,6 +10,16 @@
     }
 }
 
+.process-description__container {
+    @media screen and (min-width: 320px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+}
+
 .model-list {
     @include desktop {
         padding-left: 117px;
