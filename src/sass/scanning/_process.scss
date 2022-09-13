@@ -26,11 +26,9 @@
 .scan-process__list {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    gap: 32px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -45,6 +43,10 @@
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
     height: 210px;
+    width: calc((100% - 96px) / 4);
+    &:nth-child(-n + 3) {
+      margin-right: 32px;
+    }
   }
   @media screen and (min-width: 1440px) {
     height: 381px;
