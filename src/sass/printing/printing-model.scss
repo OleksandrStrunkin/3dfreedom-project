@@ -1,4 +1,5 @@
 .model-exsamples {
+    position: relative;
     padding-top: 40px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -10,7 +11,7 @@
 }
 
 .model-exsamples__title {
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     @include desktop {
         padding-left: 117px;
         padding-bottom: 24px;
@@ -145,3 +146,44 @@
     }
 }
 
+.model-exsamples__figure {
+    position: absolute;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+  
+.model-exsamples__figure-one {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 73.65px;
+        height: 73.65px;
+        left: -29px;
+        top: 202px;
+        border-radius: 0px 0px 35px 0px;
+    }
+    
+    @media screen and (min-width: 1440px) {
+        width: 82px;
+        height: 78px;
+        border-radius: 0px 0px 72px 0px;
+        left: 35px;
+        top: 85px;
+    }
+}
+  
+.model-exsamples__figure-two {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        width: 71.41px;
+        height: 63.79px;
+        border-radius: 0px 35px 0px 0px;
+        transform: rotate(180deg);
+        right: 32px;
+        top: 12px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 83px;
+        height: 137px;
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(90deg);
+        right: 45px;
+        top: 30px;
+    }
+}
