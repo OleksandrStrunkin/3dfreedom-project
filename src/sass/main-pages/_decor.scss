@@ -5,169 +5,51 @@
   }
 }
 
-.decor-img {
-  width: 73px;
-  height: 73px;
-  // background-color: tomato;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-  z-index: 50;
-}
-
-.decor-img__header {
-  @include tablet {
-    left: 103px;
-    top: 0px;
-    border-radius: 72px;
-    background-image: url('../images/main/decor/tablet/img-1-tab-1x-min.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/main/decor/tablet/img-1-tab-2x-min.jpg');
-    }
-  }
-}
-
-.decor-img__header--first::after {
-  @include tablet {
-    content: '';
-    position: absolute;
-    left: -100%;
-    width: 73px;
-    height: 73px;
-
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 35px 0px;
-  }
-  z-index: inherit;
-}
-.decor-img__header--first::before {
-  @include tablet {
-    content: '';
-    position: absolute;
-    top: 100%;
-    width: 73px;
-    height: 73px;
-
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 35px 0px 0px;
-  }
-  z-index: inherit;
-}
-
 .decor {
-  z-index: 50;
-  @include tablet {
-    position: absolute;
-    width: 73px;
-    height: 73px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  background-color: #fff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  @include desktop {
+    width: 144.18px;
+    height: 144.29px;
   }
 }
 
-.decor__header {
-  @include tablet {
-    border-radius: 0px 0px 0px 35px;
-  }
-}
-
-.decor__header--left-center {
-  @include tablet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 105px;
-    top: 220px;
+.decor-hero__mob-1 {
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    top: 242px;
+    left: -27px;
     border-radius: 0px 0px 35px 0px;
+    z-index: -1;
   }
 }
 
-.decor__header--left-center::before {
-  @include tablet {
-    content: '';
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    width: 73px;
-    height: 73px;
+.decor-gallary__mob-2 {
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    top: 21%;
+    right: -30px;
+    border-radius: 72px;
+    z-index: -1;
+  }
+}
 
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+.decor-gallary__mob-3 {
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    top: 67%;
+    left: -37px;
+    border-radius: 25px 0px;
+    z-index: -1;
+  }
+}
+
+.decor-gallary__mob-4 {
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    top: 111%;
+    left: -37px;
     border-radius: 0px 0px 0px 35px;
-    z-index: inherit;
-  }
-}
-.decor__header--left-center::after {
-  @include tablet {
-    content: '';
-    position: absolute;
-    top: 80%;
-    left: -100%;
-    width: 73px;
-    height: 73px;
-    background-image: url('../images/main/decor/tablet/img-3-tab-1x-min.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/main/decor/tablet/img-3-tab-2x-min.jpg');
-    }
-
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px;
-
-    z-index: inherit;
-  }
-}
-
-.decor-img__header--two {
-  @include tablet {
-    position: absolute;
-    top: 2%;
-    right: 32px;
-    border-radius: 0px 0px 72px 0px;
-    background-color: tomato;
-    background-image: url('../images/main/decor/tablet/img-2-tab-1x-min.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/main/decor/tablet/img-2-tab-2x-min.jpg');
-    }
-  }
-}
-
-.decor-img__header--two::after {
-  @include tablet {
-    content: '';
-    position: absolute;
-    left: -100%;
-    width: 73px;
-    height: 73px;
-
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    z-index: inherit;
-  }
-}
-
-.decor-img__header--two::before {
-  @include tablet {
-    content: '';
-    position: absolute;
-    left: -100%;
-    top: 100%;
-    width: 73px;
-    height: 73px;
-
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px;
-
-    z-index: inherit;
+    z-index: -1;
   }
 }

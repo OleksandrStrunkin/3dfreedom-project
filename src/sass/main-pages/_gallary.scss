@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   // align-items: center;
 
-  gap: 32px;
+  // gap: 32px;
   @include desktop {
     row-gap: 40px;
   }
@@ -47,7 +47,7 @@
 .gallary__item {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
   @include tablet {
@@ -92,3 +92,8 @@
 //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 //     1px 4px 6px rgba(0, 0, 0, 0.16);
 // }
+
+.gallary__item:nth-child(2),
+.gallary__item:nth-child(4) {
+  position: relative;
+}
