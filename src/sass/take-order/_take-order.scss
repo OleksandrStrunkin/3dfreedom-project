@@ -212,16 +212,7 @@ br {
     margin-top: -25px;
 }}
 
-.order-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    @include tablet {
-        justify-content: flex-end;
-    }
-    @include desktop {
-    flex-wrap: nowrap;
-    }
-}
+
 .order-wrap-text {
     @include desktop{
     display: flex;
