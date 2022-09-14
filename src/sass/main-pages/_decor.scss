@@ -12,7 +12,7 @@
     transform: scale(1.2);
   }
 }
-.container-relative{
+.container-relative {
   position: relative;
 }
 
@@ -99,7 +99,7 @@
   display: none;
   @include tablet {
     display: block;
-    top: 0;
+    top: -35px;
     left: 105px;
     border-radius: 72px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
@@ -112,6 +112,7 @@
 
     @include desktop {
       left: 178px;
+      top: -56px;
       background-image: url('../images/main/decor/desctop/img-1-desc-1x-min.jpg');
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -158,13 +159,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 223px;
+    top: 186px;
     left: 105px;
     border-radius: 0px 0px 35px 0px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
 
     @include desktop {
-      top: 433px;
+      top: 378px;
       left: 174px;
     }
 
@@ -221,7 +222,7 @@
   display: none;
   @include tablet {
     display: block;
-    top: 2%;
+    top: -11%;
     right: 30px;
     border-radius: 0px 0px 72px 0px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
@@ -235,6 +236,7 @@
 
     @include desktop {
       right: 32px;
+      top: -6%;
       border-radius: 0px 0px 72px 0px;
       background-image: url('../images/main/decor/desctop/img-2-desc-1x-min.jpg');
       @media (min-device-pixel-ratio: 2),
@@ -270,7 +272,7 @@
   display: none;
   @include tablet {
     display: block;
-    top: 217px;
+    top: 199px;
     right: 30px;
     border-radius: 72px 72px 0px 0px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
@@ -284,7 +286,7 @@
 
     @include desktop {
       right: 32px;
-      top: calc(432px + 2%);
+      top: 397px;
       border-radius: 72px 72px 0px 0px;
       background-image: url('../images/main/decor/desctop/img-4-desc-1x-min.jpg');
       @media (min-device-pixel-ratio: 2),
@@ -337,10 +339,6 @@
 
 // Gallary Decor
 
-.gallary .container {
-  position: relative;
-}
-
 .decor-gallary-1 {
   display: none;
   @include tablet {
@@ -373,8 +371,8 @@
   }
 
   @include desktop {
-    top: -49;
-    left: -10px;
+    top: -11;
+    left: 34px;
     width: 110px;
     border-radius: 0px 0px 72px 0px;
     transform: rotate(0);
@@ -439,10 +437,6 @@
       }
     }
   }
-}
-
-.more-photo .container {
-  position: relative;
 }
 
 .decor__more-photo-1 {
